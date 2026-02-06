@@ -2,9 +2,9 @@
 
 import { useMemo, useState } from "react";
 import { useRouter } from "next/navigation";
-import FloatingHearts from "@/components/FloatingHearts";
-import SparkleButton from "@/components/SparkleButton";
-import { encodePayload, slugifyNamePair, Payload } from "@/lib/share";
+import FloatingHearts from "../components/FloatingHearts";
+import SparkleButton from "../components/SparkleButton";
+import { encodePayload, slugifyNamePair, Payload } from "../lib/share";
 
 export default function Page() {
   const r = useRouter();
@@ -116,4 +116,5 @@ export default function Page() {
       </section>
     </main>
   );
+
 }
