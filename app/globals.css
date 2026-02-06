@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+html, body, :root {
+  height: 100%;
+  background: radial-gradient(1200px 800px at 20% 10%, #1b0b1f 0%, #0e0611 45%, #08040a 100%);
+}
+
+.container {
+  @apply max-w-3xl mx-auto px-4;
+}
+
+/* Subtle gradient frames & text */
+.heading {
+  @apply text-4xl md:text-6xl font-semibold tracking-wide text-white;
+  text-shadow: 0 0 20px rgba(255, 42, 131, 0.25);
+}
+
+.subtle {
+  @apply text-sm text-white/70;
+}
+
+/* Heart shape using pseudo-element */
+.heart {
+  position: relative;
+  width: 18px;
+  height: 18px;
+  transform: rotate(-45deg);
+  background: linear-gradient(135deg, #ff2a83, #ff7aa2);
+  box-shadow: 0 0 12px rgba(255, 42, 131, 0.5);
+  border-radius: 4px;
+}
+.heart:before,
+.heart:after {
+  content: "";
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  background: inherit;
+  border-radius: 50%;
+}
+.heart:before { top: -9px; left: 0; }
+.heart:after { left: 9px; top: 0; }
+
+/* Floating field card */
+.card {
+  @apply rounded-2xl bg-white/5 backdrop-blur-md border border-white/10 p-6 shadow-glow;
+}

@@ -1,0 +1,11 @@
+# 1) Create the folder & init
+mkdir valentine-experiences && cd valentine-experiences
+
+# 2) Create files above (or ask me for a ZIP)
+
+# 3) Install deps
+npm install
+
+# 4) Dev server
+npm run dev
+# open http://localhost:3000
