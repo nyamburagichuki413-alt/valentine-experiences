@@ -1,7 +1,7 @@
-import FloatingHearts from "@/components/FloatingHearts";
-import SparkleButton from "@/components/SparkleButton";
-import CopyButton from "@/components/CopyButton";
-import { decodePayload, Payload } from "@/lib/share";
+import FloatingHearts from "../../../components/FloatingHearts";
+import SparkleButton from "../../../components/SparkleButton";
+import CopyButton from "../../../components/CopyButton";
+import { decodePayload, Payload } from "../../../lib/share";
 
 export default function ExperiencePage({ searchParams }: { params: { id: string }, searchParams: { d?: string } }) {
   const data = searchParams?.d ? decodePayload<Payload>(searchParams.d) : null;
@@ -63,4 +63,5 @@ export default function ExperiencePage({ searchParams }: { params: { id: string 
       </section>
     </main>
   );
+
 }
